@@ -5,9 +5,18 @@ https://github.com/Anonymous-6174/logistic_growth
 
 ### Question 4
 **a)**
+
+
 **b)**
+
+
 **c)**
+
+
 **d)**
+The comparison of the change made to the random_walk.R script is shown below
+
+<img width="1373" alt="Screenshot 2024-12-12 at 15 12 32" src="https://github.com/user-attachments/assets/551faecc-edbe-4a90-9331-14f364c1789b" />
 
 
 ### Question 5
