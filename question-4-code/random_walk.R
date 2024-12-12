@@ -5,6 +5,8 @@ library(ggplot2)
 library(gridExtra)
 
 random_walk  <- function (n_steps) {
+
+  set.seed(1000)
   
   df <- data.frame(x = rep(NA, n_steps), y = rep(NA, n_steps), time = 1:n_steps)
   
