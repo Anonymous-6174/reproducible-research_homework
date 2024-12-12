@@ -1,6 +1,18 @@
 # Reproducible research: version control and R
 
-\# INSERT ANSWERS HERE #
+### Questions 1, 2, 3
+https://github.com/Anonymous-6174/logistic_growth
+
+### Question 4
+**a)**
+**b)**
+**c)**
+**d)**
+
+
+### Question 5
+
+
 
 ## Instructions
 
