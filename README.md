@@ -20,6 +20,19 @@ The comparison of the change made to the random_walk.R script is shown below
 
 
 ### Question 5
+**a)**
+
+
+**b)**
+
+
+**c)**
+
+
+**d)**
+
+
+**e)**
 
 
 
