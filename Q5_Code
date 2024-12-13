@@ -1,0 +1,49 @@
+# install relevant packages 
+library(dplyr)
+library(ggplot2)
+
+
+# Question 5 (a) 
+data <- read.csv("question-5-data/Cui_etal2014.csv")
+
+View(data)
+
+#5) a)
+ncol(data)
+nrow(data)
+# Columns = 13
+# Rows = 33
+
+
+
+# 5) b) 
+colnames(data)
+
+data$logged_volume = log(data$Virion.volume..nm.nm.nm.) 
+data$logged_length = log(data$Genome.length..kb.)
+logged_data <- data
+
+# 5) c) 
+linear_model <- lm(logged_volume ~ logged_length, 
+                   data = logged_data)
+
+summary(linear_model)
+# Intercept = 7.0748, P = 2.28e-10
+exp(7.0748)
+# = 1181.807
+# Slope = 1.5152, P = 6.44e-10
+
+
+
+# 5) d) 
+ggplot(logged_data, aes(x = logged_length, y= logged_volume)) +
+  geom_point(size=1.8) +
+  geom_smooth(method = "lm", se = T, color = "blue", size = 0.5) +
+  labs(x = "log[Genome length (kb)]", y = "log[Virion volume (nm3)]") +
+  theme_light() +
+  theme(axis.title = element_text(hjust = 0.5, size = 9, face = "bold"))
+
+
+# 5) e) 
+1181.807 * (300^1.5152)
+# So volume = 6697006
