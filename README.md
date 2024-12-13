@@ -10,10 +10,7 @@ https://github.com/Anonymous-6174/logistic_growth
 **b)**
 
 
-**c)**
-
-
-**d)**
+**c)** and **d)**
 The comparison of the change made to the random_walk.R script is shown below
 
 <img width="1373" alt="Screenshot 2024-12-12 at 15 12 32" src="https://github.com/user-attachments/assets/551faecc-edbe-4a90-9331-14f364c1789b" />
@@ -65,7 +62,7 @@ My Graph
 ![e0f755db-9139-48c9-80dc-b394c577a386](https://github.com/user-attachments/assets/b26c4414-aadf-427a-94e5-1758f96c41ff)
 
 **e)**
-$`V = ($\alpha$) L^($\beta$)
+$`V = \alpha L^{\beta}`$
 
 $\alpha$ = 118.807
 
