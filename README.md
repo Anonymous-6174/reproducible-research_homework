@@ -30,10 +30,32 @@ The comparison of the change made to the random_walk.R script is shown below
 
 
 **d)**
+The code to reproduce the figure is found below
 
+```{r}
+ggplot(logged_data, aes(x = logged_length, y= logged_volume)) +
+  geom_point(size=1.8) +
+  geom_smooth(method = "lm", se = T, color = "blue", size = 0.5) +
+  labs(x = "log[Genome length (kb)]", y = "log[Virion volume (nm3)]") +
+  theme_light() +
+  theme(axis.title = element_text(hjust = 0.5, size = 9, face = "bold"))
+```
+My Graph
+![e0f755db-9139-48c9-80dc-b394c577a386](https://github.com/user-attachments/assets/b26c4414-aadf-427a-94e5-1758f96c41ff)
 
 **e)**
+$`V = \alpha L^{\beta}
 
+\alpha = 118.807
+
+L = 300
+
+{\beta} = 1.5152
+
+```{r}
+1181.807 * (300^1.5152)
+```
+So volume = 6697006
 
 
 ## Instructions
