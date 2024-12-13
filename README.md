@@ -27,7 +27,19 @@ The comparison of the change made to the random_walk.R script is shown below
 
 
 **c)**
+The following code determines the exponent $\beta$ and scaling factor $\alpha$
+```{r}
+linear_model <- lm(logged_volume ~ logged_length, 
+                   data = logged_data)
 
+summary(linear_model)
+# Intercept = 7.0748, P = 2.28e-10
+exp(7.0748)
+# = 1181.807
+# Slope = 1.5152, P = 6.44e-10
+```
+So $\alpha$ = 1181.807 with a P value of 2.28 x 10<sup>-10</sup>
+And $/beta$ = 1.5152 with a P value of 6.44 x 10<sup>-10</sup>
 
 **d)**
 The code to reproduce the figure is found below
@@ -44,13 +56,13 @@ My Graph
 ![e0f755db-9139-48c9-80dc-b394c577a386](https://github.com/user-attachments/assets/b26c4414-aadf-427a-94e5-1758f96c41ff)
 
 **e)**
-$`V = \alpha L^{\beta}
+$`V = ($\alpha$) L^($\beta$)
 
-\alpha = 118.807
+$\alpha$ = 118.807
 
 L = 300
 
-{\beta} = 1.5152
+$\beta$ = 1.5152
 
 ```{r}
 1181.807 * (300^1.5152)
