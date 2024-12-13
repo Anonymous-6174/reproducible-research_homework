@@ -24,7 +24,16 @@ The comparison of the change made to the random_walk.R script is shown below
 
 
 **b)**
+$`V = \alpha L^{\beta}`$ has a non-linear relationship. We can log transform genome volume and genome length to allow us to fit a linear model.
+The transformation is applied below
 
+```{r}
+colnames(data)
+
+data$logged_volume = log(data$Virion.volume..nm.nm.nm.) 
+data$logged_length = log(data$Genome.length..kb.)
+logged_data <- data
+```
 
 **c)**
 The following code determines the exponent $\beta$ and scaling factor $\alpha$
