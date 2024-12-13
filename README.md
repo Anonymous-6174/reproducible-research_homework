@@ -4,7 +4,7 @@
 https://github.com/Anonymous-6174/logistic_growth
 
 ### Question 4
-**a)**
+**a)** 
 
 
 **b)**
@@ -20,7 +20,7 @@ The comparison of the change made to the random_walk.R script is shown below
 
 
 ### Question 5
-**a)**
+**a)** 33 rows and 13 columns 
 
 
 **b)**
